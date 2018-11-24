@@ -350,7 +350,7 @@ module.exports = {
             loader: getStyleLoaders({
               importLoaders: 1,
               sourceMap: shouldUseSourceMap,
-            }),
+            }, 'less-loader'),
             // Don't consider CSS imports dead code even if the
             // containing package claims to have no side effects.
             // Remove this when webpack adds a warning or an error for this.
@@ -366,7 +366,7 @@ module.exports = {
               sourceMap: shouldUseSourceMap,
               modules: true,
               getLocalIdent: getCSSModuleLocalIdent,
-            }),
+            }, 'less-loader'),
           },
           // Opt-in support for SASS. The logic here is somewhat similar
           // as in the CSS routine, except that "sass-loader" runs first
