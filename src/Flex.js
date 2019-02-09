@@ -14,12 +14,29 @@ class Flex extends Component {
         return (
             <div>
                 <div className="Flex">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div className="row">
+                        <div className="col">
+                            <h5>姓名：懒羊羊</h5>
+                            <h5>姓别：不详</h5>
+                            <h5>出生年月：2001、4</h5>
+                            <h5>电话：12345678901</h5>
+                        </div>
+                        <div className='col'>
+                            <h5>邮箱：12345678901@163.COM</h5>
+                            <h5>籍贯</h5>
+                            <h5>民族</h5>
+                        </div>
+                    </div>
+                    <div>
+                        学历
+                        工作经验
+                    </div>
+                    <div>
+                        技能
+                    </div>
                 </div>
                 <div className="link">
-                    © 2018 Yangyang
+                    © 2019 Yangyang
                     <a href="https://github.com/RYYang" target="_blank">
                         <img src={github}/>
                     </a>
